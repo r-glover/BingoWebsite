@@ -1,0 +1,115 @@
+<!DOCTYPE html> 
+
+  
+<head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+  
+<!-- External CSS Document(s) -->
+<style>
+span.letters {
+  display: inline-block;
+  width: calc(20% - 2px);
+  height: 50px;
+  padding: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  border: 1px solid black;    
+  background-color: white; 
+  font-size: 24px;
+  text-align: center;
+}
+div.header {
+font-size: 0px;
+padding:0;
+}
+</style>
+  
+<title>Rob's Bingo Extravaganza</title> 
+
+  
+<!-- Eternal JavaScript Document(s) -->
+  <script type="text/javascript" src="JS/draw.js"></script> 
+  
+<!-- Image(s) -->
+  <img id="bingocard" src="thanksgiving.png" style="display: none;">
+  <img id="dauber1" src="Images/dauber_black.png" style="display: none;">
+  <img id="dauber2" src="Images/dauber_grey.png" style="display: none;">
+  <img id="dauber3" src="Images/dauber_pink.png" style="display: none;">
+  <img id="dauber4" src="Images/dauber_blue.png" style="display: none;">
+  <img id="dauber5" src="Images/dauber_green.png" style="display: none;">
+  <img id="dauber6" src="Images/dauber_red.png" style="display: none;">
+
+  <img id="img1" src="Images/1.png" style="display: none;">
+  <img id="img2" src="Images/2.png" style="display: none;">
+  <img id="img3" src="Images/3.png" style="display: none;">
+  <img id="img4" src="Images/4.png" style="display: none;">
+  <img id="img5" src="Images/5.png" style="display: none;">
+  <img id="img6" src="Images/6.png" style="display: none;">
+  <img id="img7" src="Images/7.png" style="display: none;">
+  <img id="img8" src="Images/8.png" style="display: none;">
+  <img id="img9" src="Images/9.png" style="display: none;">
+  <img id="img10" src="Images/10.png" style="display: none;">
+  <img id="img11" src="Images/11.png" style="display: none;">
+  <img id="img12" src="Images/12.png" style="display: none;">
+  <img id="img13" src="Images/13.png" style="display: none;">
+  <img id="img14" src="Images/14.png" style="display: none;">
+  <img id="img15" src="Images/15.png" style="display: none;">
+  <img id="img16" src="Images/16.png" style="display: none;">
+  <img id="img17" src="Images/17.png" style="display: none;">
+  <img id="img18" src="Images/18.png" style="display: none;">
+  <img id="img19" src="Images/19.png" style="display: none;">
+  <img id="img20" src="Images/20.png" style="display: none;">
+  <img id="img21" src="Images/21.png" style="display: none;">
+  <img id="img22" src="Images/22.png" style="display: none;">
+  <img id="img23" src="Images/23.png" style="display: none;">
+  <img id="img24" src="Images/24.png" style="display: none;">
+  <img id="img25" src="Images/25.png" style="display: none;">
+  <img id="img26" src="Images/26.png" style="display: none;">
+  <img id="img27" src="Images/27.png" style="display: none;">
+  <img id="img28" src="Images/28.png" style="display: none;">
+  <img id="img29" src="Images/29.png" style="display: none;">
+  <img id="img30" src="Images/30.png" style="display: none;">
+  
+</head> 
+<body> 
+<div>
+	<select id="dauberSelectMenu">
+	    <option value="1">Select dauber colour</option>
+		<option value="1">Black</option>
+		<option value="2">Grey</option>
+		<option value="3">Pink</option>
+		<option value="4">Blue</option>
+		<option value="5">Green</option>
+		<option value="6">Red</option>
+	</select>
+
+  <select id="patternSelectMenu">
+    <option value="1">Select bingo type:</option>
+    <option value="1">Any line</option>
+	<option value="2">Plus</option>
+    <option value="3">Blackout</option>
+  </select>
+  
+  <input type="checkbox" id="shuffleCheckBox" >
+  <label for="shuffleCheckBox"> Shuffle outside of columns </label><br>
+
+
+</div>
+
+<div class="header" id="BINGOdiv">
+	<span class="letters"  id="BLetter">B</span>
+	<span class="letters"  id="I">I</span>
+	<span class="letters"  id="N">N</span>
+	<span class="letters"  id="G">G</span>
+	<span class="letters"  id="O">O</span>
+</div>
+
+<canvas id="myCanvas" width="1250" height="1250" style="border:1px solid #000000;">
+</canvas>
+
+<div>
+<A HREF="bingoCaller.html">Bingo caller</A>
+</div>
+
+</body> 
+</html>
