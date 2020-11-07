@@ -46,7 +46,7 @@
   
   //dauber colour select
   var dauberColour = dauberSelect.options[dauberSelect.selectedIndex].value;
-  document.getElementById("dauberSelectMenu").addEventListener("click",changeColour);  
+  document.getElementById("dauberSelectMenu").addEventListener("change",changeColour);  
   
 
   var dauberColour = dauberSelect.options[dauberSelect.selectedIndex].value;
